@@ -6,6 +6,10 @@
   font-family: Roboto, sans-serif;
 }
 
+html {
+    scroll-padding-top: 12.5% ;
+}
+
 body {
   margin: 0 2%;
 }
@@ -82,6 +86,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 15% 0;
 }
 
 .imgicons {
@@ -119,9 +124,11 @@ a:hover {
     display: flex;
     margin: 0 3%;
     justify-content: space-around;
+    height: 70vh;
 }
 
 .main1 .part {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +136,7 @@ a:hover {
     border: 20px solid white;
     border-radius: 15px;
     margin :20px;
+    overflow: hidden;
 }
 
 .main .part .image {
@@ -152,12 +160,20 @@ a:hover {
 }
 
 .part a {
+    margin-top: 2vh;
     padding: .5% 23.5%;
     border-radius: 10px;
     color: white;
     background-color: red;
     text-decoration: none;
     font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.part a:hover {
+    background-color:blue;
+    color: black;
+    transition: none;
 }
 
 .footer {
@@ -184,7 +200,33 @@ a:hover {
     font-size: 1.2rem;
 }
 
-.imgbox img{
-    width:100%;
-    height: 18vh;
+.imgbox1{
+    background-image: url(/assets/project1.jpeg);
+}
+
+.imgbox2{
+    background-image: url(/assets/project2.jpeg);
+}
+
+.imgbox3{
+    background-image: url(/assets/project3.jpeg);
+}
+
+.imgbox {
+    height: 32.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgbox .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5%;
+}
+
+#Technology {
+    height: 100vh;
+}
+
+#Technology .heading {
+    padding: 1% 0;
 }
