@@ -38,7 +38,7 @@ a:hover {
 }
 
 .banner {
-    background-image: url(/assets/glider-java-developer.png);
+    background-image: url(./assets/glider-java-developer.png);
     height: 100vh;
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -202,15 +202,15 @@ a:hover {
 }
 
 .imgbox1{
-    background-image: url(/assets/project1.jpeg);
+    background-image: url(./assets/project1.jpeg);
 }
 
 .imgbox2{
-    background-image: url(/assets/project2.jpeg);
+    background-image: url(./assets/project2.jpeg);
 }
 
 .imgbox3{
-    background-image: url(/assets/project3.jpeg);
+    background-image: url(./assets/project3.jpeg);
 }
 
 .imgbox {
