@@ -1,112 +1,133 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gluten', cursive;
+    font-size: 1.5rem;
 }
 
-.nav{
-    display: flex;
-    background-color: grey;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 12vh;
-    justify-content: center;
-    padding: 1% 0;
-    top: 0;
-}
-
-.nav img {
-    width: 8%;
-    height: 100%;
-    padding: 0 2% 0 0;
-}
-.nav h1{
-    font-size: 3rem;
-    /* font-family: sans-serif; */
-}
-
-.sidebar {
-    margin-top: 12vh;
-    position: fixed;
-    left: 0;
-    width: 13vw;
-    background-color: black;
-    height: 88vh;
-    display: flex;
-    justify-content: center;
-}
-
-/* .sidebar ul {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    list-style-type: none;
-} */
-
-.sidebar ul:nth-child(1){
-    padding-top: 5rem;
-    /* border-top: 2px solid white; */
-}
-
-.sidebar li:nth-child(1){
-    border-top: 2px solid white;
-}
-
-.sidebar li {
-    display: inline-block;
-    list-style-type: none;
-    width: 100%;
-    /* background-color: chartreuse; */
-    border-bottom: 2px solid white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.sidebar a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 15px 0;
-    border-radius: 1rem;
-    color: white;
-    font-weight: 500;
-    font-size: 2rem;
-    /* padding: 0 6vw; */
-    /* border: 1px solid red; */
-    /* background-color: brown; */
-}
-
-.sidebar a:hover {
-    background-color: white;
-    color: black;
-    transition: ease-in-out 1s ,color 1s;
-}
 
 .main {
+    margin : 0 4rem;
     display: flex;
     flex-direction: column;
-    right: 0;
-    margin-left: 26vh;
-    /* border: 20px dashed red; */
-    /* background-color: royalblue; */
     justify-content: center;
-    padding: 0 10%;
     align-items: center;
 }
 
-.image {
+.main .nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top : 12vh;
-    padding: 2rem;
+    width: 100%;
+    position: sticky;   
+    top: 0;
+    background-color: grey;
+    border: 0.2rem solid rgb(180, 179, 179);
+    box-shadow: 10px 10px 9px rgb(83, 83, 83);
 }
 
-.content {
-    text-align: justify;
+.main .nav .heading {
+    letter-spacing: 0.1rem;
     font-size: 2rem;
-    font-weight: 200;
-    line-height: 70px;
 }
+
+.main .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .content .access{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+#check {
+    display: none;
+}
+.sbtn{
+
+    position: fixed;
+    left:5rem;
+    bottom: calc(100vh - 3.5rem );
+}
+
+.sidebar{
+    display: block;
+    width: 20%;
+    position: sticky;
+    top:4.38rem;
+    left:0;
+    height: 89.1vh;
+    background-color: rgba(164, 0, 179, 0.486);
+    transition: ease-in-out 1s;
+}
+
+#check:checked ~ .sidebar{ 
+    width: 0;
+    left: 0;
+}
+
+#check:checked ~ .sidebar ul li a{
+    visibility: hidden;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sidebar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    list-style-type: none;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid rgb(120, 14, 129);
+}
+
+.sidebar ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    background-color: cyan;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0 ;
+    border-radius: 50px;
+}
+
+.sidebar ul li a:hover{
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    border-left: 10px solid powderblue; 
+}
+
+.main .content .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 223, 223);
+    justify-content: center;
+    align-items: center;
+    /* padding: 100% 0; */
+}
+
+.main-content .image img {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.main-content .text {
+    margin: 2rem 4rem;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-align: justify;
+}
+
