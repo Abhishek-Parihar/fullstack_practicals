@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    height: 15vh;
+    background-color: #fff;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin:  1rem 2rem 7rem 2rem;
+    min-width: 50rem;
+}
+
+.links p {
+    color: white;
+    font-size: 2rem;
+}
+
+.links .about{
+    margin-top: 1rem;
+    width: 35vw;
+    text-align: justify;
+}
+
+.about .p {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.534);
+    font-size: 1.5rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+}
+li ,a {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.534);;
+}
+.register{
+    border-top: .1px solid rgba(255, 255, 255, 0.534);
+    border-bottom: .1px solid rgba(255, 255, 255, 0.534);
+    width: 100%;
+    background-color: rgb(15,  15, 15);     
+    text-align: center;
+    padding : 3rem 0;
+    margin: 0 0 3rem 0; 
+}
+
+a:hover{
+    color: orange;
+}
+
+.register p{
+    color:rgba(255, 255, 255, 0.534);
+    font-size: 2rem;
+}
+.register a{
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+    padding: .5rem 1.5rem ;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.register a:hover{
+    background-color: orange;
+}
+.icons{
+    background-color: black;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons i{
+    display: flex;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(44, 43, 43, 0.89);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
