@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin: 50px 0;
+    width: 90%;
+    border-collapse: collapse;
+    border: .2rem solid rgb(52,73,94);
+    border-radius:  0 0 10px 10px;  
+}
+caption {
+    font-size: 2rem;
+    color: #eeffff;
+    padding: 1rem 0;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(52,73,94);
+}
+a {
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+a:hover{
+    color: rgb(0, 102, 255);
+}
+.link {
+    text-align: center;
+}
+tr{
+    color: rgb(41, 58, 75);
+    height: 4rem;
+    font-weight: 500;
+    border-bottom: .2rem solid #eeeeee;
+    border-left:.1rem solid rgb(52,73,94);
+    border-right:.1rem solid rgb(52,73,94);
+}
+
+tr:last-child{
+    border-bottom: rgb(41, 58, 75) ;
+}
+th{
+    font-size: 1.5rem;
+    color:rgb(34, 47, 61);
+    border-bottom: 10px solid #eeeeee;
+}
+.practicals{
+    font-size: 1.38rem;
+}
+
+/* .icons a:first-child{
+    font-size: 2rem;
+    margin-right: 10px;
+} */
+
+.icons{
+    position: relative;
+}
+
+.icons i:first-child{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.icons .edit{
+    display: none;
+}
+
+.icons .delete{
+    display: none;
+}
+
+.icons a:first-child:hover ~ .edit{
+    display: inline;
+    position: absolute;
+    top: 55px;
+    padding: 1px 10px;
+    left:  75px;
+    background-color: white;
+    box-shadow: -1px -1px black;
+}
+.icons a:nth-child(3):hover ~ .delete{
+    display: inline;
+    position: absolute;
+    top: 55px;
+    padding: 1px 10px;
+    left:  105px;
+    background-color: white;
+    box-shadow: -1px -1px black;
+}
