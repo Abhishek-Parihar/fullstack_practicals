@@ -10,7 +10,13 @@ document.querySelector(".myform").addEventListener("keyup", function (e) {
             document.querySelector("#namee").style.borderColor = "red";
             document.querySelector("#namee ~ .fa-exclamation-circle").style.display = "inline-flex";
             document.querySelector("#namee ~ .fa-check-circle").style.display = "none";
-        } else {
+        } else if(ValidateUsername(nameV) == false){
+            document.querySelector(".error.namee").innerHTML = "*Username must have lowercase letters only";
+            document.querySelector("#namee").style.borderColor = "red";
+            document.querySelector("#namee ~ .fa-exclamation-circle").style.display = "inline-flex";
+            document.querySelector("#namee ~ .fa-check-circle").style.display = "none";
+        } 
+        else {
             document.querySelector(".error.namee").innerHTML = " ";
             document.querySelector("#namee").style.borderColor = "green";
             document.querySelector("#namee ~ .fa-exclamation-circle").style.display = "none";
@@ -64,7 +70,7 @@ document.querySelector(".myform").addEventListener("keyup", function (e) {
             document.querySelector("#cpassword ~ .fa-exclamation-circle").style.display = "none";
             document.querySelector("#cpassword ~ .fa-check-circle").style.display = "inline-flex";
         }
-        if (passwordV.length > 5 && cpasswordV.length !== passwordV.length) {
+        if (passwordV.length > 5 && cpasswordV !== passwordV) {
                 document.querySelector(".error.cpassword").innerHTML = "Incorrect Password!";
                 document.querySelector("#cpassword").style.borderColor = "red";
                 document.querySelector("#cpassword ~ .fa-exclamation-circle").style.display = "inline-flex";
@@ -78,3 +84,10 @@ function ValidateEmail(emailV) {
     }
     return false;
 }
+
+function ValidateUsername(nameV){
+    if(/^[a-z]+$/g.test(nameV))
+        return true;
+    return false;
+}
+
